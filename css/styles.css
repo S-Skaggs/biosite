@@ -1,0 +1,81 @@
+/*
+  Developer Name: Sheldon Skaggs
+  Date: 11/26/2023
+  File Name: styles.css
+  Description: Style sheet to contain the style rules for the biosite website
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, div, h1, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for the body */
+body {
+  background-color: #1E563E;
+  color: #fff;
+}
+
+/* Styles for mobile viewport */
+
+/* Style rules for header */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #1E563E;
+  padding-bottom: 2%;
+}
+
+header h1 {
+  text-align: center;
+}
+
+/* Style rules for navigation area */
+nav {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+  border-top: none;
+}
+
+nav li a {
+  display: block;
+  color: #d4b286;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/* Show mobile class and hide tablet-desktop class */
+.mobile {
+  display: block;
+}
+
+.tablet-desktop {
+  display: none;
+}
+
+/* Style rules for main content */
+main {
+  padding: 2%;
+}
+
+/* Style rules for footer content */
+footer p {
+  font-size: 0.75em;
+  text-align: center;
+  padding: 0 1em;
+}
