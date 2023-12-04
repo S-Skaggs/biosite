@@ -6,16 +6,26 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, div, h1, ul, li {
+body, header, nav, main, footer, div, h1, ul, li, section, img {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* Style rules for the body */
+/* Style rules for the body and images */
 body {
   background-color: #1E563E;
   color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
 }
 
 /* Styles for mobile viewport */
@@ -45,6 +55,8 @@ nav ul {
 }
 
 nav li {
+  font-size: 1.5em;
+  font-family: 'Dosis', sans-serif;
   border-top: 1px solid #fff;
 }
 
@@ -71,6 +83,16 @@ nav li a {
 /* Style rules for main content */
 main {
   padding: 2%;
+  font-size: 1.15em;
+  font-family: 'Mate', serif;
+}
+
+p a {
+  color: inherit;
+}
+
+.round {
+  border-radius: 8px;
 }
 
 /* Style rules for footer content */
@@ -79,3 +101,46 @@ footer p {
   text-align: center;
   padding: 0 1em;
 }
+
+/* Media query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+  /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+  .tablet-desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+
+  p a:hover {
+    font-weight: bold;
+    border-radius: 4px;
+    background: rgba(120, 120, 120, .5);
+  }
+
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+
+  #container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+}
+
+/* Media Query for Print */
+@media print {
+
+  body {
+    background-color: #fff;
+    color: #000;
+  }
