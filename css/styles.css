@@ -6,7 +6,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, div, h1, ul, li, section, img {
+body, header, nav, main, footer, div, h1, ul, li, section, article, img {
   margin: 0;
   padding: 0;
   border: 0;
@@ -87,12 +87,40 @@ main {
   font-family: 'Mate', serif;
 }
 
+article {
+  padding: 2%;
+}
+
+article h3 {
+  text-shadow: 2px 2px 4px #ccc;
+  text-align: center;
+}
+
+article img {
+  margin: 0 auto;
+}
+
+article ul {
+  margin-left: 10%;
+}
+
 p a {
   color: inherit;
 }
 
-.round {
+.rounded {
   border-radius: 8px;
+}
+
+.framed {
+  border: 1px solid #d4b286;
+  padding: 1%;
+}
+
+.map {
+  border: 2px solid #d4b286;
+  width: 95%;
+  height: 50%;
 }
 
 /* Style rules for footer content */
@@ -112,6 +140,37 @@ footer p {
 
   .mobile {
     display: none;
+  }
+
+  /* Tablet Viewport: style rules for header area */
+  header {
+    padding-bottom: 2%;
+  }
+
+  /* Tablet Viewport: style rules for nav area */
+  nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #fff;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  nav li a {
+    padding: 0.1em 0.75em;
+  }
+
+  /* Tablet Viewport: Style rules for main content area */
+  main ul {
+    margin: 0 0 4% 10%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
   }
 
 }
@@ -135,6 +194,12 @@ footer p {
     margin: 0 auto;
   }
 
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+  }
+
 }
 
 /* Media Query for Print */
@@ -144,3 +209,4 @@ footer p {
     background-color: #fff;
     color: #000;
   }
+}
