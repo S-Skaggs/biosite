@@ -87,6 +87,11 @@ main {
   font-family: 'Mate', serif;
 }
 
+main article:nth-child(odd) {
+  background-color: rgba(56, 40, 20, .3);
+  border-radius: 8px 0;
+}
+
 article {
   padding: 2%;
 }
