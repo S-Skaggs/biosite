@@ -32,9 +32,6 @@ img {
 
 /* Style rules for header */
 header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   background-color: #1E563E;
   padding-bottom: 2%;
 }
@@ -193,6 +190,10 @@ footer p {
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px) {
+
+  header {
+    position: 0 auto;
+  }
 
   #container {
     width: 1920px;
