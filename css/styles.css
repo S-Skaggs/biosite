@@ -184,7 +184,7 @@ footer p {
     margin: 0 0 4% 10%;
   }
 
-  .grid {
+  .grid, .grid2 {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
