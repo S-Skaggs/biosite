@@ -6,7 +6,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, div, h1, ul, li, section, article, img {
+body, header, nav, main, footer, div, h1, ul, li, section, article, aside, img, blockquote {
   margin: 0;
   padding: 0;
   border: 0;
@@ -114,6 +114,12 @@ p a {
   border-radius: 8px;
 }
 
+.frame {
+  position: relative;
+  margin: 2% auto;
+  border: 1px solid #d4b286;
+}
+
 .frame300 {
   position: relative;
   max-width: 300px;
@@ -138,6 +144,28 @@ p a {
   border: 2px solid #d4b286;
   width: 95%;
   height: 50%;
+}
+
+/* Using the blockquote that was not covered int he book */
+blockquote {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+blockquote p::first-letter {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.asideList li {
+  font-size: .8em;
+}
+
+/* Style rule to bold and slightly increase the size the first letter of every first paragraph */
+/* first-letter pseudo class was not in the book */
+p:first-of-type::first-letter {
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 /* Style rules for footer content */
@@ -195,6 +223,39 @@ footer p {
     padding: 10px;
   }
 
+  /* Tablet Viewport: Style rules for table */
+  table {
+    border: 1px solid #d4b286;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th, td {
+    border: 1px solid #d4b286;
+    padding: 2%;
+  }
+
+  th {
+    background-color: #3ba577;
+    color: #fff;
+    font-size: 1.1em;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #097445;
+  }
+
+  td {
+    font-size: .9em;
+  }
+
 }
 
 /* Media Query for Desktop Viewport */
@@ -212,7 +273,7 @@ footer p {
 
   .frame300:hover {
     opacity: 1;
-    box-shadow: 8px 8px 10px #808080;
+    box-shadow: 8px 8px 10px #3fb582;
   }
 
   .pic-text{
@@ -230,6 +291,10 @@ footer p {
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px) {
+
+  body {
+    background: linear-gradient(to right, #1E563E, #3fb582);
+  }
 
   header {
     position: 0 auto;
