@@ -172,7 +172,25 @@ aside {
 
 aside li {
   font-size: .8em;
+}
+
+aside ul li {
   list-style: none;
+}
+
+.referencedMaterials {
+  font-size: .8em;
+  font-style: italic;
+  color: gold;
+}
+
+.referencedMaterials a {
+  font-size: .8em;
+  color: gold;
+}
+
+.referencedMaterials a:hover {
+  font-size: 1em;
 }
 
 /* Style rule to bold and slightly increase the size the first letter of every first paragraph */
