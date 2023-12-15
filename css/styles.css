@@ -118,17 +118,18 @@ p a {
   border-radius: 8px;
 }
 
-.frame {
+.frame, .frame300, .galleryFrame {
   position: relative;
   margin: 2% auto;
   border: 1px solid #d4b286;
 }
 
 .frame300 {
-  position: relative;
   max-width: 300px;
-  margin: 2% auto;
-  border: 1px solid #d4b286;
+}
+
+.galleryFrame {
+  max-width: 400px;
 }
 
 .pic-text {
@@ -141,6 +142,19 @@ p a {
   text-align: center;
   font-family: Verdana, Arial, sans-serif;
   font-size: 1.5em;
+  font-weight: bold;
+}
+
+.gallery-pic-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: .8em;
   font-weight: bold;
 }
 
