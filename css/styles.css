@@ -36,6 +36,10 @@ header {
   padding-bottom: 2%;
 }
 
+header img {
+  margin: 0 auto;
+}
+
 header h1 {
   text-align: center;
 }
@@ -157,8 +161,18 @@ blockquote p::first-letter {
   font-size: 1.3em;
 }
 
-.asideList li {
+aside {
+  border: 1px solid #d4b286;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #3fb582;
+  padding: 2%;
+  width: 90%;
+  margin: 1% auto 0 auto;
+}
+
+aside li {
   font-size: .8em;
+  list-style: none;
 }
 
 /* Style rule to bold and slightly increase the size the first letter of every first paragraph */
