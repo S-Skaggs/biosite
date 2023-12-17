@@ -114,7 +114,13 @@ p a {
   color: inherit;
 }
 
-.rounded {
+.galleryHeader {
+  background-color: #555;
+  width: 100%;
+  padding: 5px;
+}
+
+.rounded, .galleryFrame {
   border-radius: 8px;
 }
 
@@ -128,8 +134,9 @@ p a {
   max-width: 300px;
 }
 
-.galleryFrame {
-  max-width: 400px;
+.galleryImage, .galleryFrame {
+  /* max-width: 450px; */
+  max-height: 300px;
 }
 
 .pic-text {
@@ -258,7 +265,7 @@ footer p {
     margin: 0 0 4% 10%;
   }
 
-  .grid, .grid2 {
+  .grid, .grid2, .gridGallery {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
@@ -351,10 +358,10 @@ footer p {
     margin: 0 auto;
   }
 
-  .grid {
+  .grid, .gridGallery {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 30px;
+    grid-gap: 20px;
   }
 
 }
